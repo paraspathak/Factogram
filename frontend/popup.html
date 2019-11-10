@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Brawler' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Spectral' rel='stylesheet'>
+</head>
+
+<body bgcolor="f8f8ff">
+
+    <h1>
+        <div align="center" style="width: 100%; font-family: 'Brawler'; font-size: 22px; color: #2d96ad;"> Factogram
+        </div>
+    </h1>
+    <div id="main-page">
+        <table id="newitem">
+            <tr>
+                <td>
+                    <textarea id="txt_comments" placeholder="Enter a sentence to check for subjective or objective."
+                        name="txt_comments" rows="4" cols="20"
+                        style="border:solid 2px #0099cc; background-color: whitesmoke; border-radius: 4px;">
+                        </textarea>
+
+                </td>
+            </tr>
+            <tr align="center">
+                <td align="center" style="align-content: center;">
+                    <button id="submit_button" style="border:solid 2px #0099cc; border-radius: 4px; background-color: whitesmoke; ">
+                        Submit
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="progress" style="padding-top: 5px; visibility: hidden;">
+        <table>
+            <tr>
+                <progress id="score_range" value="0.5" max="1">
+
+                </progress>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+                <td id="value_range">
+                    
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    Objective
+                </td>
+                <td>
+                    ----
+                </td>
+                <td style="margin-left: 20px;;">
+                    Subjective
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    <div id="msg">
+
+    </div>
+    <script src="popup.js"></script>
+    <script src="jquery.js"></script>
+</body>
+
+</html>
